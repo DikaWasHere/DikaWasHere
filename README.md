@@ -1,3 +1,10 @@
+# Vill-V
+Exploring Tech Frontiers.
 
-![HD-wallpaper-video-game-honkai-star-rail-march-7th-honkai-star-rail](https://github.com/DikaWasHere/DikaWasHere/assets/128115929/9cc5e860-56b3-4345-871d-c5342782b926)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=DikaWasHere&show_icons=true&count_private=true&theme=radical)
 
+- **Languages**: ![JavaScript](https://img.shields.io/badge/-JavaScript-blue) ![Python](https://img.shields.io/badge/-Python-yellow)
+- **Tools**: Docker, Postman, Jira, Scikit-Learn, Jupyter
+
+### Achievements:
+![GitHub Achievements](https://github-profile-trophy.vercel.app/?username=DikaWasHere&theme=darkhub)
