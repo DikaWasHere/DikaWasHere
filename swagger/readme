@@ -1,0 +1,9 @@
+1. npm init
+2. npm install express
+3. npm install @prisma/client prisma
+4. npm install body-parser
+5. npx prisma generate
+
+// db migration
+6. npx prisma migrate dev --name init
+7. npm install joi
