@@ -1,10 +1,34 @@
+require("dotenv").config();
 const express = require("express");
+const app = express();
 const bodyParser = require("body-parser");
 const { PrismaClient } = require("@prisma/client");
 const swaggerJsDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
+const morgan = require("morgan");
+const session = require("express-session");
+const flash = require("express-flash");
+const router = require("./routes");
 
-const app = express();
+app.set("view engine", "ejs");
+app.use(express.json()); // untuk parsing application/json
+app.use(express.urlencoded({ extended: true })); // untuk parsing
+
+app.use(
+  session({
+    secret: "secret",
+    resave: false,
+    saveUninitialized: true,
+  })
+);
+
+app.use(morgan("dev"));
+app.use(flash());
+// app.get("/auth/register", (req, res) => {
+//   res.send("Hello World");
+// });
+
+app.use("/", require("./routes"));
 const port = 3000;
 const prisma = new PrismaClient();
 
