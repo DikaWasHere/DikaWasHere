@@ -9,7 +9,8 @@ const morgan = require("morgan");
 const session = require("express-session");
 const flash = require("express-flash");
 const router = require("./routes");
-
+const passport = require("./lib/passport");
+const restrict = require("./middleware/restrict");
 app.set("view engine", "ejs");
 app.use(express.json()); // untuk parsing application/json
 app.use(express.urlencoded({ extended: true })); // untuk parsing
@@ -21,6 +22,9 @@ app.use(
     saveUninitialized: true,
   })
 );
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use(morgan("dev"));
 app.use(flash());

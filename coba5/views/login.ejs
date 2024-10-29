@@ -1,6 +1,12 @@
 <h2>Login Page</h2>
-
-<!-- Misalnya ketika value user ada maka akan kita tampilkan -->
-<% if (user === "andika") { %>
-<h6><%= user %></h6>
-<% } %>
+<form action="/login" method="post">
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" />
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" />
+  </div>
+  <input type="submit" value="Login" />
+</form>
