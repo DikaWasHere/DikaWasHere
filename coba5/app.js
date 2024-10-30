@@ -1,19 +1,21 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser");
 const { PrismaClient } = require("@prisma/client");
 const swaggerJsDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
 const morgan = require("morgan");
 const session = require("express-session");
 const flash = require("express-flash");
-const router = require("./routes");
+const authRoutes = require("./routes/index"); // Mengimpor rute dari index.js
 const passport = require("./lib/passport");
-const restrict = require("./middleware/restrict");
+
+const port = process.env.PORT || 3000; // Atur port
+const prisma = new PrismaClient();
+
 app.set("view engine", "ejs");
-app.use(express.json()); // untuk parsing application/json
-app.use(express.urlencoded({ extended: true })); // untuk parsing
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use(
   session({
@@ -28,15 +30,9 @@ app.use(passport.session());
 
 app.use(morgan("dev"));
 app.use(flash());
-// app.get("/auth/register", (req, res) => {
-//   res.send("Hello World");
-// });
 
-app.use("/", require("./routes"));
-const port = 3000;
-const prisma = new PrismaClient();
-
-app.use(bodyParser.json());
+// Menggunakan rute dari index.js
+app.use("/", authRoutes);
 
 // Swagger setup
 const swaggerOptions = {
@@ -53,7 +49,7 @@ const swaggerOptions = {
       },
     ],
   },
-  apis: ["./app.js"], // file ini di mana kita mendefinisikan endpoint dan komentar Swagger
+  apis: ["./routes/*.js", "./app.js"], // Sesuaikan jalur untuk mencakup semua rute
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);

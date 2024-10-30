@@ -1,6 +1,8 @@
 const request = require("supertest");
 const { PrismaClient } = require("@prisma/client");
-const app = require("./app"); // Pastikan export app dari file app.js
+const app = require("./app");
+const controllers = require("./controllers/authControllers");
+const middleware = require("./middleware/restrict");
 const prisma = new PrismaClient();
 
 // Reset database sebelum setiap test
@@ -182,7 +184,7 @@ describe("Banking API Integration Tests", () => {
 test("should create a new user", async () => {
   const userData = {
     name: "andika",
-    email: "andika@mail.com",
+    email: "andika@gmail.com",
     password: "pass",
     identityType: "KTP",
     identityNumber: "9876543210",

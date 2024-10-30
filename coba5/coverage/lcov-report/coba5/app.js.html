@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">71.28% </span>
+                <span class="strong">70.4% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>72/101</span>
+                <span class='fraction'>69/98</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">53.57% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>13/26</span>
+                <span class='fraction'>15/28</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">71.71% </span>
+                <span class="strong">70.83% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>71/99</span>
+                <span class='fraction'>68/96</span>
             </div>
         
             
@@ -495,11 +495,7 @@
 <a name='L430'></a><a href='#L430'>430</a>
 <a name='L431'></a><a href='#L431'>431</a>
 <a name='L432'></a><a href='#L432'>432</a>
-<a name='L433'></a><a href='#L433'>433</a>
-<a name='L434'></a><a href='#L434'>434</a>
-<a name='L435'></a><a href='#L435'>435</a>
-<a name='L436'></a><a href='#L436'>436</a>
-<a name='L437'></a><a href='#L437'>437</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L433'></a><a href='#L433'>433</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -510,8 +506,10 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -530,12 +528,6 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -938,19 +930,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">require("dotenv").config();
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser");
 const { PrismaClient } = require("@prisma/client");
 const swaggerJsDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
 const morgan = require("morgan");
 const session = require("express-session");
 const flash = require("express-flash");
-const router = require("./routes");
+const authRoutes = require("./routes/index"); // Mengimpor rute dari index.js
 const passport = require("./lib/passport");
-const restrict = require("./middleware/restrict");
+&nbsp;
+const port = process.env.PORT || 3000; // Atur port
+const prisma = new PrismaClient();
+&nbsp;
 app.set("view engine", "ejs");
-app.use(express.json()); // untuk parsing application/json
-app.use(express.urlencoded({ extended: true })); // untuk parsing
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 &nbsp;
 app.use(
   session({
@@ -965,15 +959,9 @@ app.use(passport.session());
 &nbsp;
 app.use(morgan("dev"));
 app.use(flash());
-// app.get("/auth/register", (req, res) =&gt; {
-//   res.send("Hello World");
-// });
 &nbsp;
-app.use("/", require("./routes"));
-const port = 3000;
-const prisma = new PrismaClient();
-&nbsp;
-app.use(bodyParser.json());
+// Menggunakan rute dari index.js
+app.use("/", authRoutes);
 &nbsp;
 // Swagger setup
 const swaggerOptions = {
@@ -990,7 +978,7 @@ const swaggerOptions = {
       },
     ],
   },
-  apis: ["./app.js"], // file ini di mana kita mendefinisikan endpoint dan komentar Swagger
+  apis: ["./routes/*.js", "./app.js"], // Sesuaikan jalur untuk mencakup semua rute
 };
 &nbsp;
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
@@ -1378,7 +1366,7 @@ module.exports = app;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-10-29T12:49:05.735Z
+                at 2024-10-30T07:25:22.238Z
             </div>
         <script src="../prettify.js"></script>
         <script>
