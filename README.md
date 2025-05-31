@@ -1,16 +1,53 @@
-## Hi there 👋
+<h1 align="center">Hi 👋, I'm Dika</h1>
+<h3 align="center">An IT student and aspiring Data Analyst from Indonesia 🇮🇩</h3>
 
-<!--
-**DikaWasHere/DikaWasHere** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=DikaWasHere&label=Profile%20views&color=0e75b6&style=flat" alt="DikaWasHere" />
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 💡 About Me
+
+- 🌱 I’m currently learning **JavaScript (Node.js), REST API, and Data Analysis**
+- 🔭 I’m working on a **Basic Banking System API** using Express.js and Prisma
+- 🧪 Practicing **TDD** with **Jest & Supertest**
+- 📚 Always learning about data, backend, and open-source projects
+- ⚡ Fun fact: I'm ISTJ and love clean code and structured documentation
+
+---
+
+### 🛠️ Languages and Tools:
+
+<p align="left">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white"/>
+  <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+</p>
+
+---
+
+### 📈 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=DikaWasHere&show_icons=true&theme=tokyonight" alt="Dika's GitHub stats"/>
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DikaWasHere&layout=compact&theme=tokyonight" alt="Top Languages"/>
+</p>
+
+---
+
+### 🔗 Let's Connect
+
+- 📧 Email: [dikawashere@example.com](mailto:dikawashere@example.com)
+- 🌐 Portfolio: [yourportfolio.com](https://yourportfolio.com)
+- 💼 LinkedIn: [linkedin.com/in/dikawashere](https://linkedin.com/in/dikawashere)  
+- 🐦 Twitter: [@dikawashere](https://twitter.com/dikawashere)
+
+---
+
+> Thank you for visiting my GitHub profile! Let's build and grow together 🚀
