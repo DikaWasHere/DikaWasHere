@@ -43,10 +43,9 @@
 
 ### 🔗 Let's Connect
 
-- 📧 Email: [dikawashere@example.com](mailto:dikawashere@example.com)
-- 🌐 Portfolio: [yourportfolio.com](https://yourportfolio.com)
-- 💼 LinkedIn: [linkedin.com/in/dikawashere](https://linkedin.com/in/dikawashere)  
-- 🐦 Twitter: [@dikawashere](https://twitter.com/dikawashere)
+- 📧 Email: [dikawashere@example.com](andika.pw2634@gmail.com)
+- 🌐 Portfolio: [yourportfolio.com](https:)
+- 💼 LinkedIn: [linkedin.com/in/dikawashere](https://www.linkedin.com/in/andika-putra-wijaya-b92883304/)  
 
 ---
 
