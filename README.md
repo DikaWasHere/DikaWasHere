@@ -43,7 +43,7 @@
 
 ### 🔗 Let's Connect
 
-- 📧 Email: [dikawashere@example.com](andika.pw2634@gmail.com)
+- 📧 Email: [andika.pw2634@gmail.com](andika.pw2634@gmail.com)
 - 🌐 Portfolio: [yourportfolio.com](https:)
 - 💼 LinkedIn: [linkedin.com/in/dikawashere](https://www.linkedin.com/in/andika-putra-wijaya-b92883304/)  
 
