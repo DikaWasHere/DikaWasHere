@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Dika</h1>
+<h1 align="center">Hi, I'm Dika</h1>
 <h3 align="center">An IT student and aspiring Data Analyst from Indonesia 🇮🇩</h3>
 
 <p align="center">
@@ -7,7 +7,7 @@
 
 ---
 
-### 💡 About Me
+### About Me
 
 - 🌱 I’m currently learning **JavaScript (Node.js), REST API, and Data Analysis**
 - 🔭 I’m working on a **Basic Banking System API** using Express.js and Prisma
