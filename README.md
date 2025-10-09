@@ -44,7 +44,7 @@
 ### 🔗 Let's Connect
 
 - 📧 Email: [andika.pw2634@gmail.com](andika.pw2634@gmail.com)
-- 🌐 Portfolio: [MyPortofolio]([https:](https://drive.google.com/file/d/1LETXAqQASV_plBJgo6E0EmcArFrRD21e/view?usp=sharing))
+- 🌐 Portfolio: [[MyPortofolio](https://drive.google.com/file/d/1LETXAqQASV_plBJgo6E0EmcArFrRD21e/view?usp=sharing)]
 - 💼 LinkedIn: [linkedin.com/in/dikawashere](https://www.linkedin.com/in/andika-putra-wijaya-b92883304/)  
 
 ---
